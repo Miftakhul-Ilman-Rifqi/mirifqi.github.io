@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <!--penghubung CSS-->
+  <link rel="stylesheet" href="style.css">
+  <title>Saklar - MIR Site</title>
+  <!--fav-icon-->
+  <link rel="shortcut icon" href="image/faviconsm.png" />
+</head>
+
+<body>
+  <header>
+    <!-- bagian atas image -->
+    <div class="palingatas">
+      <!-- animasi timbul -->
+      <h1 class="atas">MIR Site.</h1>
+      <p class="kata">"<i>Banyak dari kegagalan hidup dialami oleh orang-orang yang tidak menyadari betapa
+          dekatnya mereka dengan kesuksesan ketika mereka menyerah."</i></p>
+    </div>
+
+    <!-- responsive navbar -->
+    <nav class="navbar" style="height: 60px;">
+      <div class="navbar__container">
+        <!-- logo -->
+        <a href="index.html" id="navbar__logo"> <img class="efeknimbul" src="image/logo.png" alt="logo"></a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <!-- tombol respon hamburger -->
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <!-- agar sejajar Display flex -->
+        <ul class="navbar__menu ">
+
+          <!-- kotak tombol -->
+          <li class="navbar__item">
+            <!-- tombol disertai link -->
+            <a class="navbar__links" href="index.html" aria-current="page">
+              <button type="button" class="btn btn-outline-primary "><i class="fas fa-home"></i>
+                Home</button></a>
+          </li>
+
+          <!-- kotak tombol -->
+          <li class="navbar__item">
+            <!-- tombol disertai link -->
+            <a class="navbar__links" href="bio.html" aria-current="page">
+              <button type="button" class="btn btn-outline-primary "><i class="fas fa-id-card"></i>
+                My Bio</button></a>
+          </li>
+
+          <!-- kotak tombol -->
+          <li class="navbar__item">
+            <!-- tombol disertai link -->
+            <a class="navbar__links" href="logsign.html" aria-current="page">
+              <button type="button" class="btn btn-outline-primary "><i class="fas fa-sign-in-alt"></i>
+                Login / Sign Up</button></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- button darkmode -->
+    <div style="float: right;display: block;">
+      <button class="btndm btndm-outline-primary efeknimbul" onclick="DarkMode()"><span>
+          <i class="fas fa-adjust faa-float animated faa-fast"></i> DarkMode</span></button>
+    </div>
+
+
+    <!-- breadcrumbs -->
+    <ul class="breadcrumbs">
+      <li><a href="Hidupmatilampu.html">
+          <p style="color: #919191;">Home</p>
+        </a></li>
+      <li style="color: #919191;margin-top: 9px;margin-left: -5px;">SAKLAR</li>
+    </ul>
+
+    <br>
+
+    <div>
+      <!-- JS waktu saat ini -->
+      <p style="font-size: 14px;color: #919191;">Waktu saat ini: <span id="tanggalwaktu"></span></p>
+
+      <!-- audio tag -->
+      <audio style="float: right;" controls preload="metadata">
+        <source src="audio/hmbn.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+      </audio>
+    </div>
+
+    <!-- isi konten -->
+    <div id="content">
+      <article id="Home" class="card1">
+
+        <!-- awalan tugas -->
+
+        <div style="text-align: center;">
+          <p class="p2-base">SAKLAR SENTUH</p>
+
+          <!-- 1 -->
+          <p id="p1" style="color: blue;" class="p1-base">INI LAMPU MATI</p>
+
+          <script>
+            function rubahgambar() {
+              var image = document.getElementById('gambarku');
+              if (image.src.match("lampuhidup")) {
+                document.getElementById("p1").style.color = "blue";
+                document.getElementById("p1").innerHTML = "INI LAMPU MATI";
+                image.src = "image/lampumati.png";
+              } else {
+                document.getElementById("p1").style.color = "red";
+                document.getElementById("p1").innerHTML = "INI LAMPU HIDUP";
+                image.src = "image/lampuhidup.png";
+              }
+            }
+
+            function ongambar() {
+              var image = document.getElementById('gambarku');
+              if (image.src.match("lampuhidup")) {
+                document.getElementById("p1").style.color = "red";
+                document.getElementById("p1").innerHTML = "INI LAMPU HIDUP";
+                image.src = "image/lampuhidup.png";
+              } else {
+                document.getElementById("p1").style.color = "red";
+                document.getElementById("p1").innerHTML = "INI LAMPU HIDUP";
+                image.src = "image/lampuhidup.png";
+              }
+            }
+
+            function offgambar() {
+              var image = document.getElementById('gambarku');
+              if (image.src.match("lampuhidup")) {
+                document.getElementById("p1").style.color = "blue";
+                document.getElementById("p1").innerHTML = "INI LAMPU MATI";
+                image.src = "image/lampumati.png";
+              } else {
+                document.getElementById("p1").style.color = "blue";
+                document.getElementById("p1").innerHTML = "INI LAMPU MATI";
+                image.src = "image/lampumati.png";
+              }
+            }
+          </script>
+
+          <img src="image/lampumati.png" alt="malam" id="gambarku" onclick="rubahgambar()" border="0" height="10%"
+            width="20%">
+          <p class="p1-base">KLIK GAMBAR LAMPU UNTUK MEMATIKAN DAN MENGHIDUPKAN LAMPU</p>
+          <p class="p1-base">ATAU GUNAKAN TOMBOL DIBAWAH INI</p>
+
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="left"
+            title="Press to OFF" onclick="offgambar()">OFF</button>
+
+          <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="right"
+            title="Press to ON" onclick="ongambar()">ON</button>
+          <br><br>
+          
+
+          <br>
+          <hr>
+          <br>
+
+          <!-- 2 -->
+          <p id="p2" style="color: blue;" class="p1-base">INI LAMPU MATI</p>
+
+          <script>
+            function rubahhgambar() {
+              var image = document.getElementById('gambarlampu');
+              if (image.src.match("lamhidup")) {
+                document.getElementById("p2").style.color = "blue";
+                document.getElementById("p2").innerHTML = "INI LAMPU MATI";
+                image.src = "image/lammati.png";
+              } else {
+                document.getElementById("p2").style.color = "red";
+                document.getElementById("p2").innerHTML = "INI LAMPU HIDUP";
+                image.src = "image/lamhidup.png";
+              }
+            }
+
+            function onngambar() {
+              var image = document.getElementById('gambarlampu');
+              if (image.src.match("lamhidup")) {
+                document.getElementById("p2").style.color = "red";
+                document.getElementById("p2").innerHTML = "INI LAMPU HIDUP";
+                image.src = "image/lamhidup.png";
+              } else {
+                document.getElementById("p2").style.color = "red";
+                document.getElementById("p2").innerHTML = "INI LAMPU HIDUP";
+                image.src = "image/lamhidup.png";
+              }
+            }
+
+            function offfgambar() {
+              var image = document.getElementById('gambarlampu');
+              if (image.src.match("lamhidup")) {
+                document.getElementById("p2").style.color = "blue";
+                document.getElementById("p2").innerHTML = "INI LAMPU MATI";
+                image.src = "image/lammati.png";
+              } else {
+                document.getElementById("p2").style.color = "blue";
+                document.getElementById("p2").innerHTML = "INI LAMPU MATI";
+                image.src = "image/lammati.png";
+              }
+            }
+          </script>
+
+          <img src="image/lammati.png" alt="malam" id="gambarlampu" onclick="rubahhgambar()" border="0" height="10%"
+            width="20%">
+          <p class="p1-base">KLIK GAMBAR LAMPU UNTUK MEMATIKAN DAN MENGHIDUPKAN LAMPU</p>
+          <p class="p1-base">ATAU GUNAKAN TOMBOL DIBAWAH INI</p>
+
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="left"
+            title="Press to OFF" onclick="offfgambar()">OFF</button>
+
+          <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="right"
+            title="Press to ON" onclick="onngambar()">ON</button>
+          <br><br>
+
+          <!-- akhiran tugas -->
+        </div>
+
+        <br><br>
+        <p class="p3-base">Written by <a id="p3-bases" href="#">Miftakhul Ilman Rifqi</a> ,Posted on <a id="p3-bases"
+            href="#">10 Juni 2021</a></p>
+        <br>
+        <hr>
+        <br>
+        <div class="nav-previous"><a href="#"><span>Previous
+              post</span><br><br> Spesifikasi Harga Xiaomi Redmi Note 9 Pro Max Terbaru</a></div>
+
+        <div class="nav-next"><a href="#"><span>Next
+              post</span><br><br>
+            Review Spesifikasi dan Harga Realme 6 Pro 2020</a></div>
+        <br><br><br><br><br><br>
+        <hr>
+
+
+        <!-- Services Section -->
+        <div class="services" id="services">
+          <h1>Artikel Lainnya</h1>
+          <!-- menggunakan grid -->
+          <div class="services__wrapper">
+
+            <!-- perkotak -->
+            <div class="services__card">
+              <a style="text-decoration: none;" href="midoriya.html">
+                <img src="image/midoriya1.jpg" alt="deku"
+                  style="border-radius: 20px 20px 5px 5px;width: 100%;margin-top: -7px;"">
+                <h2>-MY HERO ACADEMIA-</h2>
+                <h2 style=" font-size: 20px;text-align: center;">IZUKU MIDORIYA</h2>
+              </a>
+            </div>
+
+            <!-- perkotak -->
+            <div class="services__card">
+              <a style="text-decoration: none;" href="midoriya.html">
+                <img src="image/midoriya1.jpg" alt="deku"
+                  style="border-radius: 20px 20px 5px 5px;width: 100%;margin-top: -7px;"">
+                <h2>-MY HERO ACADEMIA-</h2>
+                <h2 style=" font-size: 20px;text-align: center;">IZUKU MIDORIYA</h2>
+              </a>
+            </div>
+
+            <!-- perkotak -->
+            <div class="services__card">
+              <a style="text-decoration: none;" href="midoriya.html">
+                <img src="image/midoriya1.jpg" alt="deku"
+                  style="border-radius: 20px 20px 5px 5px;width: 100%;margin-top: -7px;"">
+                <h2>-MY HERO ACADEMIA-</h2>
+                <h2 style=" font-size: 20px;text-align: center;">IZUKU MIDORIYA</h2>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <br>
+
+        <hr>
+        <br>
+
+        <h4 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow"
+              id="cancel-comment-reply-link" href="/contoh-script-html-biodata-keren/#respond"
+              style="display:none;">Cancel reply</a></small></h4>
+
+
+        <hr>
+        <br>
+
+        <!-- kolom komentar -->
+        <form name="formkomen" action="daftar.php" method="POST" id="formKomentar"
+          onsubmit="return validateFormkomen()">
+          <div>
+            <input type="text" name="nama" class="Myinput" placeholder="Nama">
+          </div>
+
+          <div>
+            <input type="text" name="email" class="Myinput" placeholder="Email">
+          </div>
+
+          <div>
+            <input type="text" name="website" class="Myinput" name="website" placeholder="Website" />
+          </div>
+
+          <div>
+            <textarea name="komen" class="Myinputkomen" rows="10" placeholder="Komentar"></textarea>
+          </div>
+
+          <div>
+            <input type="submit" name="klik" value="Tambahkan Komentar" />
+          </div>
+        </form>
+
+      </article>
+    </div>
+
+    <!-- bagian samping float -->
+    <aside>
+      <article class="card1">
+        <header>
+          <div>
+            <h2 align="center">Kunjungi juga</h2>
+            <hr>
+            <!-- link-link -->
+            <ul style="border-left-style: solid;border-left-width: 0px;padding-left: 5px;list-style: none;">
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+
+              <hr>
+
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+
+              <hr>
+            </ul>
+
+            <br> </br>
+        </header>
+      </article>
+
+      <!-- video tag -->
+      <video style="width: 100%;margin-top: 20px;border-radius: 10px;" controls>
+        <source src="video/Blcr-167-480P-SAMEHADAKU.VIP.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+      </video>
+
+    </aside>
+
+  </main>
+
+
+  <footer>
+    <!-- Footer Section -->
+    <div class="footer__container">
+      
+
+      <!-- bawah sendiri -->
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <!-- logo -->
+          <div class="footer__logo">
+            <a href="index.html" id="footer__logo"><img src="image/logo.png" alt="logo"></a>
+          </div>
+          <p class="website__rights">
+            <p class="website__rights">© MIRSite 2021. All rights reserved</p>
+          </p>
+
+          <!-- link icon -->
+          <div class="social__icons">
+            <a href="https://web.facebook.com/BozzClax/" class="social__icon--link" target="_blank"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/miftakhul_ilman_rifqi/" class="social__icon--link"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/channel/UCLr9cQIzbUuO8LdWpZK72iQ" class="social__icon--link"><i
+                class="fab fa-youtube"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=6282251204797&text=Hai, Chat-an yuk"
+              class="social__icon--link"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://twitter.com/IlmanMiftakhul?s=09" class="social__icon--link"><i
+                class="fab fa-twitter"></i></a>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </footer>
+
+  <!-- penghubung script JavaScript -->
+  <script src="js.js"></script>
+
+</body>
+
+</html>

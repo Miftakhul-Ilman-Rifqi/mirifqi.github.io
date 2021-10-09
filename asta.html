@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <!--penghubung CSS-->
+  <link rel="stylesheet" href="style.css">
+  <title>Asta - MIR Site</title>
+  <!--fav-icon-->
+  <link rel="shortcut icon" href="image/faviconsm.png" />
+</head>
+
+<body>
+  <header>
+    <!-- bagian atas image -->
+    <div class="palingatas">
+      <!-- animasi timbul -->
+      <h1 class="atas">MIR Site.</h1>
+      <p class="kata">"<i>Banyak dari kegagalan hidup dialami oleh orang-orang yang tidak menyadari betapa
+          dekatnya mereka dengan kesuksesan ketika mereka menyerah."</i></p>
+    </div>
+
+    <!-- responsive navbar -->
+    <nav class="navbar" style="height: 60px;">
+      <div class="navbar__container">
+        <!-- logo -->
+        <a href="index.html" id="navbar__logo"> <img class="efeknimbul" src="image/logo.png" alt="logo"></a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <!-- tombol respon hamburger -->
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <!-- agar sejajar Display flex -->
+        <ul class="navbar__menu ">
+
+          <!-- kotak tombol -->
+          <li class="navbar__item">
+            <!-- tombol disertai link -->
+            <a class="navbar__links" href="index.html" aria-current="page">
+              <button type="button" class="btn btn-outline-primary "><i class="fas fa-home"></i>
+                Home</button></a>
+          </li>
+
+          <!-- kotak tombol -->
+          <li class="navbar__item">
+            <!-- tombol disertai link -->
+            <a class="navbar__links" href="bio.html" aria-current="page">
+              <button type="button" class="btn btn-outline-primary "><i class="fas fa-id-card"></i>
+                My Bio</button></a>
+          </li>
+
+          <!-- kotak tombol -->
+          <li class="navbar__item">
+            <!-- tombol disertai link -->
+            <a class="navbar__links" href="logsign.html" aria-current="page">
+              <button type="button" class="btn btn-outline-primary "><i class="fas fa-sign-in-alt"></i>
+                Login / Sign Up</button></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- button darkmode -->
+    <div style="float: right;display: block;">
+      <button class="btndm btndm-outline-primary efeknimbul" onclick="DarkMode()"><span>
+          <i class="fas fa-adjust faa-float animated faa-fast"></i> DarkMode</span></button>
+    </div>
+
+
+    <!-- breadcrumbs -->
+    <ul class="breadcrumbs">
+      <li><a href="index.html">
+          <p style="color: #919191;">Home</p>
+        </a></li>
+      <li style="color: #919191;margin-top: 9px;margin-left: -5px;">ASTA</li>
+    </ul>
+
+    <br>
+
+    <div>
+      <!-- JS waktu saat ini -->
+      <p style="font-size: 14px;color: #919191;">Waktu saat ini: <span id="tanggalwaktu"></span></p>
+
+      <!-- audio tag -->
+      <audio style="float: right;" controls preload="metadata">
+        <source src="audio/hmbn.mp3" type="audio/mp3">
+        Your browser does not support the video tag.
+      </audio>
+    </div>
+
+    <!-- isi konten -->
+    <div id="content">
+      <article id="Home" class="card1">
+
+        <!-- image slider -->
+        <div class="slider">
+          <figure>
+            <div class="slide">
+              <img src="image/asta1.jpg">
+            </div>
+
+            <div class="slide">
+              <img src="image/asta2.jpg">
+            </div>
+
+            <div class="slide">
+              <img src="image/asta3.jpg">
+            </div>
+
+          </figure>
+        </div>
+
+
+        <h3 id="judulanime">-BLACK CLOVER-</h3>
+        <h1 id="namachara"><b>ASTA STARIA</b></h1>
+
+        <p class="p1-base"><br><b>Asta Staria 「アスタ・スタリア Asuta Sutaria」</b>, adalah anak yatim piatu yang
+          dibesarkan di bawah asuhan
+          gereja di desa Hage, setelah ibunya meninggalkannya di depan pintu gereja. Setelah menginjak 15
+          tahun, Asta menerima grimoire semanggi berdaun lima dengan iblis Anti Sihir di dalamnya. Dia
+          bergabung di Ksatria Sihir dari Kerajaan Semanggi, pasukan dari Banteng Hitam dan menjadi
+          Ksatria
+          Sihir Junior Kelas 3, serta menjadi anggota sementara Ksatria Kerajaan.</p>
+
+        <p class="p2-base">PENAMPILAN</p>
+        <p class="p1-base">Asta adalah pemuda bertubuh pendek dengan otot yang berotot. Dia memiliki mata
+          hijau
+          dan rambut pirang abu berantakan dengan satu untai menonjol ke atas dari tengah kepalanya.
+          Dia
+          menyimpan rambutnya dengan ikat kepala hitam, yang memiliki lambang Banteng Hitam berwarna
+          emas dan
+          memiliki bintang empat berwarna merah dengan tiga jahitan di bagian belakangnya. Dia
+          memiliki banyak
+          bekas luka di sekujur tubuhnya dari latihan fisik yang berat, dan bekas luka besar di
+          perutnya di
+          mana salah satu Harpe milik Mars menusuknya. </p>
+        <p class="p1-base">Pakaian umum Asta terdiri dari tunik putih polos dengan kerah berbentuk V di
+          bawah
+          jaket biru tua yang lengannya meluas sampai ke siku. Dia olahraga sepasang celana pendek
+          yang cocok
+          yang memiliki tanda jahitan di sisi kiri. Celananya juga meluas di bawah lututnya. Sepatunya
+          terbuat
+          dari dua kain yang berbeda, bagian-bagian yang menutupi pergelangan kakinya, solnya memiliki
+          warna
+          yang sama dengan jaket dan celana dalamnya. Bagian-bagian yang menutupi jari-jari kakinya
+          berwarna
+          putih, tanda jahitan vertikal melintang dari jembatan ke jari kakinya. Ketika dia mengirim
+          anti-sihirnya ke tubuhnya, ia mengelilingi bagian kanan tubuhnya dengan bahan hitam dan dia
+          mendapatkan transformasi iblis parsial. </p>
+        <p class="p1-base">Setelah menerima grimoire-nya, Asta memakai sebuah kantong yang diikatkan pada
+          sabuk
+          kulit berwarna coklat. Selain itu, sebagai anggota Banteng Hitam, dia memakai jubah tanda
+          tangan
+          skuadnya, yang hitam dan pendek dengan pemangkasan emas dan menutupi bagian atas tubuhnya.
+          Ini juga
+          memiliki tudung dan sebuah tombol berwarna emas yang terletak di sisi kanan untuk
+          menahannya,
+          sementara sisi kiri menampilkan lencana skuad. </p>
+        <p class="p1-base">Setelah enam bulan pelatihan di Kerajaan Hati, Asta menjadi lebih
+          berotot. Selain itu,
+          ia mengenakan kemeja hitam hitam ketat yang menutupi bahu, lengan atas, dan sebagian
+          dadanya.
+          Terbuka di tengah dan memiliki semanggi emas di sisi kanan. Lebih dari ini, ia memakai jubah
+          jubah
+          regu versi modifikasi yang tersampir di bahu kirinya dan diikat dengan tali merah yang
+          melingkari
+          lehernya. Ikat kepalanya memiliki tiga bintang berwarna merah, berujung empat di sisi kanan
+          depan
+          dan lencana Banteng Hitam di sebelah kiri. Dia juga mengenakan sepasang celana panjang hitam
+          berpinggang tinggi yang diselipkan ke sepatu bot setinggi lutut dan ikat pinggang besar
+          berwarna
+          cokelat, dari mana menggantung tas grimoire-nya.
+          <p class="p1-base">Setelah melakukan tawar-menawar dengan Liebe, lengan kanan Asta berubah
+            permanen
+            menjadi hitam dengan corak merah darah, dan jari-jari tangannya menjadi merah darah
+            dengan corak
+            hitam dan kuku hitam. Setelah menempa kontrak yang setara dengan Liebe, tanda berwarna
+            gelap muncul
+            di sekitar pergelangan tangan kirinya. Penandaannya adalah dua garis tipis berduri
+            dengan tulisan
+            iblis di antara garis-garis tersebut.</p>
+          <p class="p1-base">Dalam bentuk Asta Hitam-nya, lengan kanannya ditutupi dengan Anti Sihir
+            hitam, sayap
+            hitam tumbuh dari bahu kanannya, tanduk hitam yang disebut kecambah Weg dari sisi kanan
+            kepalanya,
+            bagian atas kepalanya gigi taring kanan memanjang, dan mata kanannya memerah dengan
+            pupil menjadi
+            seperti celah. Saat dia menggambar lebih banyak Anti Sihir, lebih banyak tubuhnya
+            tertutup, tanduk
+            tambahan terbentuk di kepalanya, gigi kaninus kanan bawahnya memanjang, kanannya tangan
+            dan kaki
+            berubah menjadi cakar, kecambah sayap yang lebih kecil dari bahu kirinya, dan ekor
+            tumbuh dari
+            punggungnya. Setelah melakukan tawar-menawar dengan iblis, lengan kanan Asta tampak
+            berkerut dan
+            jari-jarinya cakar dan warnanya lebih terang dari sisa tangannya.</p>
+
+
+          <p class="p2-base"><b>KEPRIBADIAN</b></p>
+          <p class="p1-base">Asta umumnya ceria dan hiperaktif. Dia cenderung berteriak untuk
+            mengungkapkan
+            pemikirannya dan mengungkapkan tujuannya, terlepas dari pendapat orang lain, seperti
+            yang terlihat
+            saat dia mengungkapkan tujuannya untuk menjadi seorang Kaisar Sihir selama ujian
+            masuk Ksatria
+            Sihir, dimana dia mengatakan kepada orang lain yang tidak setuju dengan dia untuk
+            diam. Kepentingan
+            kuat kepada Yami Sukehiro cukup untuk merekrut dia ke dalam barisannya. Keteguhannya
+            yang kuat juga
+            membawa dia untuk memiliki kemauan yang kuat untuk tidak pernah menyerah dan tetap
+            berdiri selama
+            pertempuran yang keras, seperti yang diakui oleh Magna Swing.</p>
+          <p class="p1-base">Karena dibesarkan di wilayah Ditinggalkan, Asta sering menerima
+            opini
+            keras dan
+            penghinaan dari hampir semua orang yang dia temui. Hal ini membuat Asta memiliki
+            sifat sedikit
+            sarkastik saat ia mencoba membela diri. Tapi, setelah mendapat opini keras dari
+            orang lain, Asta
+            telah mengembangkan kekebalan terhadap mereka karena dia dapat dengan mudah
+            menyingkirkannya tanpa
+            terlalu kesal. Namun, Asta masih kesal saat orang lain sangat menghina
+            rekan-rekannya; dia tidak
+            akan ragu untuk menghadapi mereka saat dia mencoba membela teman-temannya.</p>
+
+
+          <p class="p2-base"><b>KEMAMPUAN</b></p>
+          <ul>
+            <li>
+              <p class="p1-base"><b>Pendekar Pedang</b>: Asta awalnya memiliki gaya yang kasar
+                karena memiliki
+                pedang yang tidak biasa dan hanya menerima pelatihan dasar dari Fanzell
+                Kruger. Seiring
+                waktu ia mengembangkan keterampilan yang lebih besar melalui pengalaman
+                pertempuran, pedang
+                tambahan, dan penginderaan ki. Asta telah menjadi pendekar pedang
+                berkemampuan tinggi
+                setelah banyak pertarungan melawan atau dengan pendekar pedang sihir
+                seperti Mars, Kiato,
+                Fanzell, Licht, dan Yami, karena ia melawan dan mengalahkan Liebe, yang
+                menggunakan ketiga
+                Pedang Anti-Sihir.</p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <p class="p1-base"><b>Tanpa Kekuatan Sihir</b>: Asta tidak memiliki mana dan
+                karenanya tidak dapat
+                menggunakan sihir. Ini memungkinkan Asta menggunakan Anti Sihir tanpa
+                menderita efek melemah
+                karena dia tidak memiliki sihir untuk dikeringkan. Ini juga membuatnya
+                tidak terdeteksi oleh
+                pendeteksi mana, dan kebal terhadap zat yang menguras kehidupan dunia
+                bawah.</p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <p class="p1-base"><b>Kepemilikan Iblis</b>: Sebagai pengguna dari grimoire semanggi
+                berdaun lima, Asta
+                terhubung ke Liebe, yang memiliki Anti Sihir, yang memberinya akses ke
+                energi ini. Semakin
+                banyak kekuatan yang dia gunakan, semakin mirip iblis penampilannya.
+                Asta setuju untuk
+                melakukan tawar-menawar dengan iblis: lengan kanannya ditukar dengan
+                kekuatan iblis yang
+                lebih banyak. Peningkatan kekuatan ini memungkinkan dia untuk meniadakan
+                Keistimewaan
+                Gravitasi, dan untuk melapisi senjata tambahan dalam Anti Sihir; Namun,
+                ia dibatasi hingga
+                50 detik penggunaannya. Setelah menjalani Ritual Pengikat Iblis, Asta
+                membuat kontrak dengan
+                Liebe untuk berbagi kekuasaan secara setara.s Setelah menempa kontrak
+                dan pelatihan ini
+                selama beberapa hari, Asta dan Liebe mendapatkan kemampuan untuk
+                menggunakan kekuatan
+                Penggabungan, yang sangat meningkatkan kemampuan Anti Sihir mereka.
+                Namun, mereka berdua
+                menunjukkan bahwa Gabungan mereka belum sempurna, dan hanya berlangsung
+                sekitar 5 menit.</p>
+            </li>
+          </ul>
+
+          <p class="p2-base"><b>PERALATAN</b></p>
+          <ul>
+            <li>
+              <p class="p1-base"><b>Grimoire</b>: Asta memegang daun semanggi lima daun, yang ia
+                terima saat bertarung
+                dengan Revchi. Grimoire compang-camping dan tertutup kotoran, lencana
+                semanggi lima daun
+                hitam di bagian tengah penutup depannya. Simbol semanggi ini sebagian
+                besar tidak terlihat
+                karena kotoran yang menutupinya, membuat sebagian besar (termasuk Asta)
+                berasumsi bahwa
+                grimoire memiliki sihir yang tidak biasa namun tidak biasa. Grimoire-nya
+                dulunya adalah
+                grimoire semanggi berdaun empat milik Licht, sebelum dirusak oleh Zagred
+                dan dihuni oleh
+                iblis lainnya.</p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <p class="p1-base"><b>Pedang Anti Sihir</b>: Asta mampu memanggil pedang yang
+                disalurkan dengan Anti
+                Sihir dari grimoire-nya. Dia menggunakan pedang ini untuk berbagai
+                pelanggaran yang dapat
+                membatalkan sihir. Pedang dapat memotong melalui sihir, tetapi direduksi
+                menjadi senjata
+                tumpul saat digunakan untuk menyerang apa pun.</p>
+            </li>
+          </ul>
+
+          <br><br>
+          <p class="p3-base">Written by <a id="p3-bases" href="#">Miftakhul Ilman Rifqi</a> ,Posted on <a id="p3-bases"
+              href="#">10 Juni 2021</a></p>
+          <br>
+          <hr>
+          <br>
+          <div class="nav-previous"><a href="#"><span>Previous
+                post</span><br><br> Spesifikasi Harga Xiaomi Redmi Note 9 Pro Max Terbaru</a></div>
+
+          <div class="nav-next"><a href="#"><span>Next
+                post</span><br><br>
+              Review Spesifikasi dan Harga Realme 6 Pro 2020</a></div>
+          <br><br><br><br><br><br>
+          <hr>
+
+
+          <!-- Services Section -->
+          <div class="services" id="services">
+            <h1>Artikel Lainnya</h1>
+            <!-- menggunakan grid -->
+            <div class="services__wrapper">
+
+
+
+              <!-- perkotak -->
+              <div class="services__card">
+                <a style="text-decoration: none;" href="midoriya.html">
+                  <img src="image/midoriya1.jpg" alt="deku"
+                    style="border-radius: 20px 20px 5px 5px;width: 100%;margin-top: -7px;"">
+                <h2>-MY HERO ACADEMIA-</h2>
+                <h2 style=" font-size: 20px;text-align: center;">IZUKU MIDORIYA</h2>
+                </a>
+              </div>
+
+              <!-- perkotak -->
+              <div class="services__card">
+                <a style="text-decoration: none;" href="midoriya.html">
+                  <img src="image/midoriya1.jpg" alt="deku"
+                    style="border-radius: 20px 20px 5px 5px;width: 100%;margin-top: -7px;"">
+                <h2>-MY HERO ACADEMIA-</h2>
+                <h2 style=" font-size: 20px;text-align: center;">IZUKU MIDORIYA</h2>
+                </a>
+              </div>
+
+              <!-- perkotak -->
+              <div class="services__card">
+                <a style="text-decoration: none;" href="midoriya.html">
+                  <img src="image/midoriya1.jpg" alt="deku"
+                    style="border-radius: 20px 20px 5px 5px;width: 100%;margin-top: -7px;"">
+                <h2>-MY HERO ACADEMIA-</h2>
+                <h2 style=" font-size: 20px;text-align: center;">IZUKU MIDORIYA</h2>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <br>
+
+          <hr>
+          <br>
+
+          <h4 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow"
+                id="cancel-comment-reply-link" href="/contoh-script-html-biodata-keren/#respond"
+                style="display:none;">Cancel reply</a></small></h4>
+
+
+          <hr>
+          <br>
+
+          <!-- kolom komentar -->
+          <form name="formkomen" action="daftar.php" method="POST" id="formKomentar"
+            onsubmit="return validateFormkomen()">
+            <div>
+              <input type="text" name="nama" class="Myinput" placeholder="Nama">
+            </div>
+
+            <div>
+              <input type="text" name="email" class="Myinput" placeholder="Email">
+            </div>
+
+            <div>
+              <input type="text" name="website" class="Myinput" name="website" placeholder="Website" />
+            </div>
+
+            <div>
+              <textarea name="komen" class="Myinputkomen" rows="10" placeholder="Komentar"></textarea>
+            </div>
+
+            <div>
+              <input type="submit" name="klik" value="Tambahkan Komentar" />
+            </div>
+          </form>
+
+      </article>
+    </div>
+
+    <!-- bagian samping float -->
+    <aside>
+      <article class="card1">
+        <header>
+          <div>
+            <h2 align="center">Kunjungi juga</h2>
+            <hr>
+            <!-- link-link -->
+            <ul style="border-left-style: solid;border-left-width: 0px;padding-left: 5px;list-style: none;">
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+
+              <hr>
+
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+
+              <hr>
+            </ul>
+
+            <br> </br>
+        </header>
+      </article>
+
+      <!-- video tag -->
+      <video style="width: 100%;margin-top: 20px;border-radius: 10px;" controls>
+        <source src="video/Blcr-167-480P-SAMEHADAKU.VIP.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+      </video>
+
+    </aside>
+
+  </main>
+
+
+  <footer>
+    <!-- Footer Section -->
+    <div class="footer__container">
+      
+
+      <!-- bawah sendiri -->
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <!-- logo -->
+          <div class="footer__logo">
+            <a href="index.html" id="footer__logo"><img src="image/logo.png" alt="logo"></a>
+          </div>
+          <p class="website__rights">
+            <p class="website__rights">© MIRSite 2021. All rights reserved</p>
+          </p>
+
+          <!-- link icon -->
+          <div class="social__icons">
+            <a href="https://web.facebook.com/BozzClax/" class="social__icon--link" target="_blank"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/miftakhul_ilman_rifqi/" class="social__icon--link"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/channel/UCLr9cQIzbUuO8LdWpZK72iQ" class="social__icon--link"><i
+                class="fab fa-youtube"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=6282251204797&text=Hai, Chat-an yuk"
+              class="social__icon--link"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://twitter.com/IlmanMiftakhul?s=09" class="social__icon--link"><i
+                class="fab fa-twitter"></i></a>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </footer>
+
+  <!-- penghubung script JavaScript -->
+  <script src="js.js"></script>
+
+</body>
+
+</html>

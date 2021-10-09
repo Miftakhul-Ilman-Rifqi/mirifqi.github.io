@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <!--penghubung CSS-->
+  <link rel="stylesheet" href="style.css">
+  <title>My Bio - MIR Site</title>
+  <!--fav-icon-->
+  <link rel="shortcut icon" href="image/faviconsm.png" />
+</head>
+
+<body>
+  <header>
+    <!-- bagian atas image -->
+    <div class="palingatas">
+      <!-- animasi timbul -->
+      <h1 class="atas">MIR Site.</h1>
+      <p class="kata">"<i>Banyak dari kegagalan hidup dialami oleh orang-orang yang tidak menyadari betapa
+          dekatnya mereka dengan kesuksesan ketika mereka menyerah."</i></p>
+    </div>
+
+    <!-- responsive navbar -->
+    <nav class="navbar" style="height: 60px;">
+      <div class="navbar__container">
+        <!-- logo -->
+        <a href="index.html" id="navbar__logo"> <img class="efeknimbul" src="image/logo.png" alt="logo"></a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <!-- tombol respon hamburger -->
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <!-- agar sejajar Display flex -->
+        <ul class="navbar__menu ">
+
+          <!-- kotak tombol -->
+          <li class="navbar__item">
+            <!-- tombol disertai link -->
+            <a class="navbar__links" href="index.html" aria-current="page">
+              <button type="button" class="btn btn-outline-primary "><i class="fas fa-home"></i>
+                Home</button></a>
+          </li>
+
+          <!-- kotak tombol -->
+          <li class="navbar__item">
+            <!-- tombol disertai link -->
+            <a class="navbar__links" href="bio.html" aria-current="page">
+              <button type="button" class="btn btn-outline-primary "><i class="fas fa-id-card"></i>
+                My Bio</button></a>
+          </li>
+
+          <!-- kotak tombol -->
+          <li class="navbar__item">
+            <!-- tombol disertai link -->
+            <a class="navbar__links" href="logsign.html" aria-current="page">
+              <button type="button" class="btn btn-outline-primary "><i class="fas fa-sign-in-alt"></i>
+                Login / Sign Up</button></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- JS waktu saat ini -->
+    <div style="float: left;display: block;">
+      <p style="font-size: 14px;color: #919191;">Waktu saat ini: <span id="tanggalwaktu"></span></p>
+    </div>
+
+    </div>
+    <!-- button darkmode -->
+    <div style="float: right;display: block;">
+      <button class="btndm btndm-outline-primary efeknimbul" onclick="DarkMode()"><span>
+          <i class="fas fa-adjust faa-float animated faa-fast"></i> DarkMode</span></button>
+    </div>
+
+    <br>
+
+    <!-- isi konten -->
+    <div id="contentbio">
+      <article id="Home" class="card1" style="text-align: center;">
+        <hr>
+
+        <!-- image -->
+        <img class="foto efeknimbul" src="image/fotoku.jpg" alt="gans">
+        <!-- nama -->
+        <h1 class="tulis">MIFTAKHUL ILMAN RIFQI</h1>
+
+        <p class="pib">
+          Mahasiswa dari <i class="fas fa-code"></i><b class="fs-5"> STMIK AKAKOM</b>
+        </p>
+
+        <blockquote>
+          <p class="pib"><i style="color: #999;"> " Panggil saja Rifqi, 4 maret 2002, suka mencari jalan pintas </i><i
+              class="fab fa-android"></i> " </p>
+        </blockquote>
+
+        <br>
+
+        <!-- icon link -->
+        <a href="https://web.facebook.com/BozzClax/" target="_blank"><button type="button" class="btn">
+            <i class="fab fa-facebook-f"></i>
+          </button></a>
+
+        <a href="https://twitter.com/IlmanMiftakhul?s=09" target="_blank"><button type="button" class="btn">
+            <i class="fab fa-twitter"></i>
+          </button></a>
+
+        <a href="https://youtube.com/channel/UCLr9cQIzbUuO8LdWpZK72iQ" target="_blank"><button type="button"
+            class="btn">
+            <i class="fab fa-youtube"></i>
+          </button></a>
+
+        <a href="https://api.whatsapp.com/send?phone=6282251204797&text=Hai, Chat-an yuk" target="_blank"><button
+            type="button" class="btn">
+            <i class="fab fa-whatsapp"></i>
+          </button></a>
+
+        <a href="https://www.instagram.com/miftakhul_ilman_rifqi/" target="_blank"><button type="button" class="btn">
+            <i class="fab fa-instagram"></i>
+          </button></a>
+
+        <hr>
+      </article>
+    </div>
+  </main>
+
+
+  <footer>
+    <!-- Footer Section -->
+    <div class="footer__container">
+
+
+      <!-- bawah sendiri -->
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <!-- logo -->
+          <div class="footer__logo">
+            <a href="index.html" id="footer__logo"><img src="image/logo.png" alt="logo"></a>
+          </div>
+          <p class="website__rights">
+            <p class="website__rights">© MIRSite 2021. All rights reserved</p>
+          </p>
+
+          <!-- link icon -->
+          <div class="social__icons">
+            <a href="https://web.facebook.com/BozzClax/" class="social__icon--link" target="_blank"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/miftakhul_ilman_rifqi/" class="social__icon--link"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/channel/UCLr9cQIzbUuO8LdWpZK72iQ" class="social__icon--link"><i
+                class="fab fa-youtube"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=6282251204797&text=Hai, Chat-an yuk"
+              class="social__icon--link"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://twitter.com/IlmanMiftakhul?s=09" class="social__icon--link"><i
+                class="fab fa-twitter"></i></a>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </footer>
+
+  <!-- penghubung script JavaScript -->
+  <script src="js.js"></script>
+
+</body>
+
+</html>

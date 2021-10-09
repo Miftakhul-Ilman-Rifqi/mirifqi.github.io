@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <!--penghubung CSS-->
+  <link rel="stylesheet" href="style.css">
+  <title>Kasir - MIR Site</title>
+  <!--fav-icon-->
+  <link rel="shortcut icon" href="image/faviconsm.png" />
+
+</head>
+
+<body>
+  <header>
+    <!-- bagian atas image -->
+    <div class="palingatas">
+      <!-- animasi timbul -->
+      <h1 class="atas">MIR Site.</h1>
+      <p class="kata">"<i>Banyak dari kegagalan hidup dialami oleh orang-orang yang tidak menyadari betapa
+          dekatnya mereka dengan kesuksesan ketika mereka menyerah."</i></p>
+    </div>
+
+    <!-- responsive navbar -->
+    <nav class="navbar" style="height: 60px;">
+      <div class="navbar__container">
+        <!-- logo -->
+        <a href="index.html" id="navbar__logo"> <img class="efeknimbul" src="image/logo.png" alt="logo"></a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <!-- tombol respon hamburger -->
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <!-- agar sejajar Display flex -->
+        <ul class="navbar__menu ">
+
+          <!-- kotak tombol -->
+          <li class="navbar__item">
+            <!-- tombol disertai link -->
+            <a class="navbar__links" href="index.html" aria-current="page">
+              <button type="button" class="btn btn-outline-primary "><i class="fas fa-home"></i>
+                Home</button></a>
+          </li>
+
+          <!-- kotak tombol -->
+          <li class="navbar__item">
+            <!-- tombol disertai link -->
+            <a class="navbar__links" href="bio.html" aria-current="page">
+              <button type="button" class="btn btn-outline-primary "><i class="fas fa-id-card"></i>
+                My Bio</button></a>
+          </li>
+
+          <!-- kotak tombol -->
+          <li class="navbar__item">
+            <!-- tombol disertai link -->
+            <a class="navbar__links" href="logsign.html" aria-current="page">
+              <button type="button" class="btn btn-outline-primary "><i class="fas fa-sign-in-alt"></i>
+                Login / Sign Up</button></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- button darkmode -->
+    <div style="float: right;display: block;">
+      <button class="btndm btndm-outline-primary efeknimbul" onclick="DarkMode()"><span>
+          <i class="fas fa-adjust faa-float animated faa-fast"></i> DarkMode</span></button>
+    </div>
+
+
+    <!-- breadcrumbs -->
+    <ul class="breadcrumbs">
+      <li><a href="index.html">
+          <p style="color: #919191;">Home</p>
+        </a></li>
+      <li style="color: #919191;margin-top: 9px;margin-left: -5px;">Kasir</li>
+    </ul>
+
+    <br>
+
+    <div>
+      <!-- JS waktu saat ini -->
+      <p style="font-size: 14px;color: #919191;">Waktu saat ini: <span id="tanggalwaktu"></span></p>
+
+      <!-- audio tag -->
+      <audio style="float: right;" controls preload="metadata">
+        <source src="audio/hmbn.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+      </audio>
+    </div>
+
+    <!-- isi konten -->
+    <div id="content">
+      <article id="Home" class="card1">
+        <form action="#" name="formkasir">
+        <tbody>
+          <table>
+            <caption>KASIR</caption>
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">PRODUCT</th>
+                <th scope="col">Unit price</th>
+                <th scope="col">Purchase amount</th>
+              </tr>
+            </thead>
+            <table>
+
+
+              <tr>
+                <td scope="row" data-label="#">1</td>
+                <td data-label="PRODUCT">
+                  <p class="p1-base">Seblak Kering</p>
+                  <video style="width: 100px;margin-top: 20px;border-radius: 10px;" controls>
+                    <source src="video/seblakkering.mp4" type="video/mp4">
+                    Browser tidak mendukung video
+                  </video>
+                </td>
+                <td data-label="Unit price">
+                  <div >
+                    <span >Rp</span>
+                    <input type="text" name="satu" class="form-control" style="background-color: #f4f4f4;" value="30000"
+                      disabled="disabled">
+                  </div>
+                </td>
+                <td data-label="Purchase amount">
+                  <div >
+
+                    <input type="number" name="seblaka" class="form-control" value="0" oninput="warung()">
+                    <span >pcs</span>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td scope="row" data-label="#">2</td>
+                <td data-label="PRODUCT">
+                  <p class="p1-base">Doritos</p>
+                  <video style="width: 100px;margin-top: 20px;border-radius: 10px;" controls>
+                    <source src="video/doritos.mp4" type="video/mp4">
+                    Browser tidak mendukung video
+                  </video>
+                </td>
+                <td data-label="Unit price">
+                  <div >
+                    <span >Rp</span>
+                    <input type="text" name="dua" class="form-control" style="background-color: #f4f4f4;" value="4000"
+                      aria-label="Username" aria-describedby="basic-addon1" disabled="disabled">
+                  </div>
+                </td>
+                <td data-label="Purchase amount">
+                  <div >
+
+                    <input type="number" name="doritosa" class="form-control " value="0" oninput="warung()">
+                    <span >pcs</span>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td scope="row" data-label="#">3</td>
+                <td data-label="PRODUCT">
+                  <p class="p1-base">Kopi Kapal Api</p>
+                  <video style="width: 100px;margin-top: 20px;border-radius: 10px;" controls>
+                    <source src="video/kopi.mp4" type="video/mp4">
+                    Browser tidak mendukung video
+                  </video>
+                </td>
+                <td data-label="Unit price">
+                  <div >
+                    <span >Rp</span>
+                    <input type="text" name="tiga" class="form-control" style="background-color: #f4f4f4;" value="15000"
+                      aria-label="Username" aria-describedby="basic-addon1" disabled="disabled">
+                  </div>
+                </td>
+                <td data-label="Purchase amount">
+                  <div >
+                    <input type="number" name="kopia" class="form-control " value="0" oninput="warung()">
+                    <span >pcs</span>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td scope="row" data-label="#">4</td>
+                <td data-label="PRODUCT">
+                  <p class="p1-base">Chocolate</p>
+                  <video style="width: 100px;margin-top: 20px;border-radius: 10px;" controls>
+                    <source src="video/choco.mp4" type="video/mp4">
+                    Browser tidak mendukung video
+                  </video>
+                </td>
+                <td data-label="Unit price">
+                  <div >
+                    <span >Rp</span>
+                    <input type="text" name="empat" class="form-control" style="background-color: #f4f4f4;"
+                      value="13000" aria-label="Username" aria-describedby="basic-addon1" disabled="disabled">
+                  </div>
+                </td>
+                <td data-label="Purchase amount">
+                  <div >
+
+                    <input type="number" name="chocoa" class="form-control " value="0" oninput="warung()">
+                    <span >pcs</span>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td scope="row" data-label="#">5</td>
+                <td data-label="PRODUCT">
+                  <p class="p1-base">Bubble Gum</p>
+                  <video style="width: 100px;margin-top: 20px;border-radius: 10px;" controls>
+                    <source src="video/bigbabbol.mp4" type="video/mp4">
+                    Browser tidak mendukung video
+                  </video>
+                </td>
+                <td data-label="Unit price">
+                  <div >
+                    <span >Rp</span>
+                    <input type="text" name="lima" class="form-control" style="background-color: #f4f4f4;" value="2000"
+                      aria-label="Username" aria-describedby="basic-addon1" disabled="disabled">
+                  </div>
+                </td>
+                <td data-label="Purchase amount">
+                  <div >
+
+                    <input type="number" name="bubblea" class="form-control " value="0" oninput="warung()">
+                    <span >pcs</span>
+                  </div>
+                </td>
+              </tr>
+
+        </tbody>
+
+        <table>
+          <tbody>
+
+            <tr>
+              <th scope="row" colspan="2"></th>
+              <th></th>
+              <th class="text-center">Total number</th>
+              <th>
+                <div  style="width: 100%;">
+                  <span >Rp</span>
+                  <input type="text" name="TotalBayar" class="form-control" style="background-color: #f4f4f4;" value="-"
+                    disabled="disabled">
+                </div>
+              </th>
+            </tr>
+
+            <tr>
+              <th scope="row" colspan="2"></th>
+              <th></th>
+              <th class="text-center">Discount</th>
+              <th>
+                <div  style="width: 100%;">
+                  <span >Rp</span>
+                  <input type="text" name="Diskon" class="form-control" style="background-color: #f4f4f4;" value="-"
+                    disabled="disabled">
+                </div>
+              </th>
+            </tr>
+
+            <tr>
+              <th scope="row" colspan="2"></th>
+              <th></th>
+              <th class="text-center">Total Pay</th>
+              <th>
+                <div  style="width: 100%;">
+                  <span >Rp</span>
+                  <input type="text" name="JumlahBayar" class="form-control" style="background-color: #f4f4f4;"
+                    value="-" disabled="disabled">
+                </div>
+              </th>
+            </tr>
+
+            <tr>
+              <th scope="row" colspan="2"></th>
+              <th></th>
+              <th class="text-center">Payment</th>
+              <th>
+                <div  style="width: 100%;">
+                  <span >Rp</span>
+                  <input type="number" name="bayar" class="form-control" style="background-color: #ffffff;" value="0"
+                    oninput="warung()">
+                </div>
+              </th>
+            </tr>
+
+            <tr>
+              <th scope="row" colspan="2"></th>
+              <th></th>
+              <th class="text-center">Change</th>
+              <th>
+                <div  style="width: 100%;">
+                  <span >Rp</span>
+                  <input name="kmblian" class="form-control" style="background-color: #f4f4f4;" value="-"
+                    disabled="disabled">
+                </div>
+              </th>
+            </tr>
+
+            <br>
+            <tr>
+              <th scope="row" colspan="3"></th>
+              
+              <th style="text-align: center;">
+                <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="left"
+                  onclick="awal()" value="RESET" title="Press to reset">
+                  RESET
+                </button>
+              </th>
+              <th>
+                <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="right"
+                  onclick="window.print()" value="Print" title="Press to reset">
+                  PRINT
+                </button>
+
+              </th>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+        </table>
+      </form>
+        <p style="text-align: center;">* Get a
+          discount of Rp. 15,000 if the total
+          purchases exceeding Rp. 100,000 </p>
+
+        <br><br>
+        <p class="p3-base">Written by <a id="p3-bases" href="#">Miftakhul Ilman Rifqi</a> ,Posted on <a id="p3-bases"
+            href="#">10 Juni 2021</a></p>
+        <br>
+        <hr>
+        <br>
+        <div class="nav-previous"><a href="#"><span>Previous
+              post</span><br><br> Spesifikasi Harga Xiaomi Redmi Note 9 Pro Max Terbaru</a></div>
+
+        <div class="nav-next"><a href="#"><span>Next
+              post</span><br><br>
+            Review Spesifikasi dan Harga Realme 6 Pro 2020</a></div>
+        <br><br><br><br><br><br>
+        <hr>
+
+
+        <!-- Services Section -->
+        <div class="services" id="services">
+          <h1>Artikel Lainnya</h1>
+          <!-- menggunakan grid -->
+          <div class="services__wrapper">
+
+            <!-- perkotak -->
+            <div class="services__card">
+              <a style="text-decoration: none;" href="midoriya.html">
+                <img src="image/midoriya1.jpg" alt="deku"
+                  style="border-radius: 20px 20px 5px 5px;width: 100%;margin-top: -7px;"">
+                <h2>-MY HERO ACADEMIA-</h2>
+                <h2 style=" font-size: 20px;text-align: center;">IZUKU MIDORIYA</h2>
+              </a>
+            </div>
+
+            <!-- perkotak -->
+            <div class="services__card">
+              <a style="text-decoration: none;" href="midoriya.html">
+                <img src="image/midoriya1.jpg" alt="deku"
+                  style="border-radius: 20px 20px 5px 5px;width: 100%;margin-top: -7px;"">
+                <h2>-MY HERO ACADEMIA-</h2>
+                <h2 style=" font-size: 20px;text-align: center;">IZUKU MIDORIYA</h2>
+              </a>
+            </div>
+
+            <!-- perkotak -->
+            <div class="services__card">
+              <a style="text-decoration: none;" href="midoriya.html">
+                <img src="image/midoriya1.jpg" alt="deku"
+                  style="border-radius: 20px 20px 5px 5px;width: 100%;margin-top: -7px;"">
+                <h2>-MY HERO ACADEMIA-</h2>
+                <h2 style=" font-size: 20px;text-align: center;">IZUKU MIDORIYA</h2>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <br>
+
+        <hr>
+        <br>
+
+        <h4 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow"
+              id="cancel-comment-reply-link" href="/contoh-script-html-biodata-keren/#respond"
+              style="display:none;">Cancel reply</a></small></h4>
+
+
+        <hr>
+        <br>
+
+        <!-- kolom komentar -->
+        <form name="formkomen" action="daftar.php" method="POST" id="formKomentar"
+          onsubmit="return validateFormkomen()">
+          <div>
+            <input type="text" name="nama" class="Myinput" placeholder="Nama">
+          </div>
+
+          <div>
+            <input type="text" name="email" class="Myinput" placeholder="Email">
+          </div>
+
+          <div>
+            <input type="text" name="website" class="Myinput" name="website" placeholder="Website" />
+          </div>
+
+          <div>
+            <textarea name="komen" class="Myinputkomen" rows="10" placeholder="Komentar"></textarea>
+          </div>
+
+          <div>
+            <input type="submit" name="klik" value="Tambahkan Komentar" />
+          </div>
+        </form>
+
+      </article>
+    </div>
+
+    <!-- bagian samping float -->
+    <aside>
+      <article class="card1">
+        <header>
+          <div>
+            <h2 align="center">Kunjungi juga</h2>
+            <hr>
+            <!-- link-link -->
+            <ul style="border-left-style: solid;border-left-width: 0px;padding-left: 5px;list-style: none;">
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+
+              <hr>
+
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+
+              <hr>
+            </ul>
+
+            <br> </br>
+        </header>
+      </article>
+
+      <!-- video tag -->
+      <video style="width: 100%;margin-top: 20px;border-radius: 10px;" controls>
+        <source src="video/Blcr-167-480P-SAMEHADAKU.VIP.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+      </video>
+
+    </aside>
+
+  </main>
+
+
+  <footer>
+    <!-- Footer Section -->
+    <div class="footer__container">
+      
+
+      <!-- bawah sendiri -->
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <!-- logo -->
+          <div class="footer__logo">
+            <a href="index.html" id="footer__logo"><img src="image/logo.png" alt="logo"></a>
+          </div>
+          <p class="website__rights">
+            <p class="website__rights">© MIRSite 2021. All rights reserved</p>
+          </p>
+
+          <!-- link icon -->
+          <div class="social__icons">
+            <a href="https://web.facebook.com/BozzClax/" class="social__icon--link" target="_blank"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/miftakhul_ilman_rifqi/" class="social__icon--link"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/channel/UCLr9cQIzbUuO8LdWpZK72iQ" class="social__icon--link"><i
+                class="fab fa-youtube"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=6282251204797&text=Hai, Chat-an yuk"
+              class="social__icon--link"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://twitter.com/IlmanMiftakhul?s=09" class="social__icon--link"><i
+                class="fab fa-twitter"></i></a>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </footer>
+
+  <!-- penghubung script JavaScript -->
+  <script src="js.js"></script>
+
+</body>
+
+</html>

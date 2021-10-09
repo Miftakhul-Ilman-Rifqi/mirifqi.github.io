@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <!--penghubung CSS-->
+  <link rel="stylesheet" href="style.css">
+  <title>Midoriya - MIR Site</title>
+  <!--fav-icon-->
+  <link rel="shortcut icon" href="image/faviconsm.png" />
+</head>
+
+<body>
+  <header>
+    <!-- bagian atas image -->
+    <div class="palingatas">
+      <!-- animasi timbul -->
+      <h1 class="atas">MIR Site.</h1>
+      <p class="kata">"<i>Banyak dari kegagalan hidup dialami oleh orang-orang yang tidak menyadari betapa
+          dekatnya mereka dengan kesuksesan ketika mereka menyerah."</i></p>
+    </div>
+
+    <!-- responsive navbar -->
+    <nav class="navbar" style="height: 60px;">
+      <div class="navbar__container">
+        <!-- logo -->
+        <a href="index.html" id="navbar__logo"> <img class="efeknimbul" src="image/logo.png" alt="logo"></a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <!-- tombol respon hamburger -->
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <!-- agar sejajar Display flex -->
+        <ul class="navbar__menu ">
+
+          <!-- kotak tombol -->
+          <li class="navbar__item">
+            <!-- tombol disertai link -->
+            <a class="navbar__links" href="index.html" aria-current="page">
+              <button type="button" class="btn btn-outline-primary "><i class="fas fa-home"></i>
+                Home</button></a>
+          </li>
+
+          <!-- kotak tombol -->
+          <li class="navbar__item">
+            <!-- tombol disertai link -->
+            <a class="navbar__links" href="bio.html" aria-current="page">
+              <button type="button" class="btn btn-outline-primary "><i class="fas fa-id-card"></i>
+                My Bio</button></a>
+          </li>
+
+          <!-- kotak tombol -->
+          <li class="navbar__item">
+            <!-- tombol disertai link -->
+            <a class="navbar__links" href="logsign.html" aria-current="page">
+              <button type="button" class="btn btn-outline-primary "><i class="fas fa-sign-in-alt"></i>
+                Login / Sign Up</button></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- button darkmode -->
+    <div style="float: right;display: block;">
+      <button class="btndm btndm-outline-primary efeknimbul" onclick="DarkMode()"><span>
+          <i class="fas fa-adjust faa-float animated faa-fast"></i> DarkMode</span></button>
+    </div>
+
+
+    <!-- breadcrumbs -->
+    <ul class="breadcrumbs">
+      <li><a href="index.html">
+          <p style="color: #919191;">Home</p>
+        </a></li>
+      <li style="color: #919191;margin-top: 9px;margin-left: -5px;">Midoriya</li>
+    </ul>
+
+    <br>
+
+    <div>
+      <!-- JS waktu saat ini -->
+      <p style="font-size: 14px;color: #919191;">Waktu saat ini: <span id="tanggalwaktu"></span></p>
+
+      <!-- audio tag -->
+      <audio style="float: right;" controls preload="metadata">
+        <source src="audio/hmbn.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+      </audio>
+    </div>
+
+    <!-- isi konten -->
+    <div id="content">
+      <article id="Home" class="card1">
+
+        <!-- image slider -->
+        <div class="slider">
+          <figure>
+            <div class="slide">
+              <img src="image/midoriya1.jpg">
+            </div>
+
+            <div class="slide">
+              <img src="image/midoriya2.jpg">
+            </div>
+
+            <div class="slide">
+              <img src="image/midoriya3.jpg">
+            </div>
+
+          </figure>
+        </div>
+
+
+        <h3 id="judulanime">-MY HERO ACADEMIA-</h3>
+        <h1 id="namachara"><b>IZUKU MIDORIYA</b></h1>
+
+        <p class="p1-base">
+          <b>Izuku Midoriya (緑 み ど り 谷 や 出 い ず 久 く Midoriya Izuku)</b>, juga dikenal sebagai
+          Deku, adalah protagonis utama My Hero Academia.
+
+          Meskipun lahir tanpa Quirk, ia berhasil mendapat perhatian pahlawan legendaris All Might karena
+          kepahlawanannya dan sejak itu menjadi murid dekatnya dan juga seorang siswa di SMA U.A. All Might
+          mewariskan quirknya kepada Izuku, membuat Izuku menjadi pemilik kesembilan dari Quirk One For All.
+        </p>
+
+        <p class="p2-base">PENAMPILAN</p>
+
+        </p>
+        <p class="p1-base">Zuku memiliki mata hijau bulat, rambut hijau gelap berantakan dengan bayangan hitam,
+          dan empat bintik simetris di kedua pipi di bawah matanya. Selama masa SMP-nya, ia mengenakan seragam
+          gakuran hitam dengan kancing kuning, ditemani sepatu putih polos. Saat di rumah, ia mengenakan
+          jinbei hijau di atas kemeja putih dan celana olahraga abu-abu.</p>
+
+        <p class="p1-base">Di U.A., dia memakai seragam laki-laki standar: jaket abu-abu terang di atas kemeja
+          putih dan celana hijau gelap, bersama dengan dasi merah yang tidak diikatnya dengan benar,
+          membuatnya lebih pendek dari yang seharusnya. Izuku biasanya memakai sepatu bot merah kebesaran.</p>
+        <p class="p1-base">Ketika ia masih muda, dua puluh empat tahun yang lalu, rambut Garp dan jenggot
+          masih
+          hitam, dengan brewok nya mulai memutih. Dia juga mengenakan setelan breasted ganda lebih gelap
+          dengan kemeja putih dan dasi merah, tapi dia sudah memiliki bekas luka di sekitar mata kirinya.
+        </p>
+        <p class="p1-base">Meskipun pada awalnya sangat kurus, Izuku telah mendapatkan otot-ototnya berkembang
+          dengan baik setelah sepuluh bulan pelatihan dengan All Might. Seiring berjalannya waktu, terlihat
+          bahwa tubuh Izuku terus menjadi lebih berotot dan menonjol. Izuku sering digambarkan sebagai sosok
+          yang sangat polos.</p>
+        <p class="p1-base">Kostum Pahlawan pertama Izuku adalah jumpsuit yang dominan berwarna hijau dengan
+          sabuk merah, bantalan siku, bantalan lutut, dan sarung tangan, bersama dengan sepatu bot merahnya.
+          Dia juga mengenakan topeng dengan tonjolan seperti telinga panjang yang menyerupai rambut All Might,
+          dan respirator dengan senyuman di atasnya. Kostumnya rusak parah setelah latihan pertempuran Izuku
+          dengan Katsuki Bakugo dan harus diperbaiki.</p>
+        <p class="p1-base">Selama USJ Arc, sementara kostumnya sedang diperbaiki, Izuku mengenakan seragam
+          olahraga U.A.: seragam olahraga biru dengan garis-garis putih tebal di atas tubuh bagian atas dan
+          kakinya, yang membentuk huruf "UA". Dia juga membeli respirator pengganti.</p>
+        <p class="p1-base">Kostum Pahlawan kedua Izuku memiliki beberapa perubahan, dan meskipun beberapa aspek
+          asli dibawa, sekarang terlihat lebih kuat dan lebih efisien dalam penampilan. Kostum keduanya adalah
+          jumpsuit full-body hijau gelap dengan sepatu bot dan bantalan siku merah yang sama. Bantalan lutut
+          telah diperluas ke kakinya dan mencapai pahanya. Sarung tangan barunya berwarna krem, dan memiliki
+          garis-garis biru menghiasi mereka. Respiratornya sekarang terbuat dari logam, berbentuk berlian, dan
+          memiliki dua lubang di bagian atas dan bawah, dari kiri ke kanan.</p>
+        <p class="p1-base">Selama Arc Lisensi Pahlawan, Izuku telah meningkatkan kostumnya agar sesuai dengan
+          Shoot Style-nya dengan menambahkan sol besi ke sepatu merahnya untuk meningkatkan kekuatan
+          tendangannya, dan memperluas sarung tangannya dan menambahkan penguat lengan untuk menjaga lengannya
+          agar tidak patah dan menyebabkan kerusakan lebih lanjut. Bantalan lututnya sekarang memiliki baut
+          kuning yang diikatkan ke mereka. Kemudian, Mei Hatsume membuat sarung tangan mesin untuk lebih baik
+          membantunya menggunakan kekuatannya tanpa menempatkan beban di lengannya.</p>
+        <p class="p1-base">Setelah pertarungannya dengan Shoto Todoroki, jari-jari di tangan kanannya menjadi
+          sedikit cacat, dan dia mendapat dua bekas luka di sisi tangannya. Lengan kanannya semakin rusak
+          setelah pertarungannya dengan Muscular, meninggalkan banyak bekas luka di sekitarnya.</p>
+
+        <p class="p2-base">KEPRIBADIAN</p>
+        <p class="p1-base">Izuku adalah anak laki-laki yang sangat pemalu, suka menolong dan sopan, sering
+          bereaksi berlebihan terhadap situasi abnormal dengan ekspresi berlebihan. Karena ditindas sejak
+          kecil dan dilahirkan tanpa quirk, ia awalnya digambarkan menjadi lebih pendiam dan tidak ekspresif
+          terhadap diri sendiri, terutama di depan Katsuki Bakugo, yang terus-menerus menundukkannya karena
+          cita-citanya menjadi Hero. Namun, setelah diterima di U.A. High School, membuat teman baru dan
+          menghadapi Katsuki selama Arc Latihan Pertarungan, dia secara bertahap berubah menjadi orang yang
+          lebih percaya diri dan berani, sampai-sampai mengembangkan beberapa keterampilan kepemimpinan.</p>
+        <p class="p1-base">Izuku juga sangat rajin dan berkemauan keras. Impiannya menjadi Hero mendorongnya
+          untuk memiliki kebiasaan menuliskan catatan tentang semua hal yang dia tahu tentang klebiasaan Hero.
+          Karena kebiasaan ini, Izuku telah mengembangkan pikiran analitis yang hebat dan dengan mudah mampu
+          membentuk rencana pertempuran yang rumit dalam hitungan detik, memanfaatkan keuntungan dari musuh
+          dan musuh-musuhnya untuk menggerakkan mereka. Izuku mengekspresikan pengamatannya melalui gumaman
+          yang tak ada habisnya, kebiasaan yang dianggap mengganggu dan atau menakut-nakuti teman-temannya.
+          Izuku sering menuliskan pengamatannya dalam sebuah buku catatan yang ia sebut sebagai Analisis
+          Pahlawan untuk Masa Depan. </p>
+        <p class="p1-base">Izuku adalah orang yang peduli, dan tidak akan pernah ragu untuk menyelamatkan
+          seseorang dalam bahaya, bahkan jika dia tahu bahwa dia tidak cukup kuat untuk melakukannya.
+          Seringkali, dia melakukan ini dengan nekat, mengambil tindakan yang lebih ceroboh dari pemikiran
+          berlebihan yang biasa ia lakukan. Izuku juga terbukti tidak mementingkan diri sendiri untuk mencoba
+          membantu orang-orang dengan masalah pribadi dan emosional. Semangat heroik Izuku diakui oleh banyak
+          orang, membuatnya mendapatkan loyalitas dan terima kasih dari karakter yang sebelumnya antagonis
+          kepadanya seperti Tenya Iida, Shoto Todoroki, dan Kota Izumi. </p>
+        <p class="p1-base">Dari semua Hero, All Might Sang Simbol Perdamaian adalah salah satu yang memiliki
+          pengaruh paling besar dalam hidupnya, mantan Pahlawan Nomor Satu tersebut telah membentuk sebagian
+          besar tujuan dan keyakinan yang diikuti Izuku sejak kecil. Banyak keputusan dan tindakan Izuku yang
+          terinspirasi oleh keinginannya untuk menjadi Pahlawan yang mirip dengan All Might, dan dengan
+          demikian ia memiliki pengabdian yang besar untuknya, sampai mengumpulkan berbagai pernak-pernik yang
+          terkait dengan All Might dan meniru beberapa sifatnya . Setelah mewarisi quirk All Might, salah satu
+          prioritas Izuku saat ini adalah untuk dapat menguasai warisan idolanya, karena dia selalu mencari
+          cara untuk meningkatkan penggunaan One For All-nya, menyadari tekanan besar untuk menggantikan
+          Pahlawan terhebat sepanjang waktu. </p>
+        <p class="p1-base">Izuku tampaknya memiliki sisi kurang ajar dan kasar padanya yang sebagian besar
+          muncul ketika dirinya dalam pertempuran. Sisi ini membuatnya bertindak lebih seperti Katsuki,
+          menjadi agak keras dan tak tergoyahkan, dan juga memiliki dorongan kuat menuju kemenangan. Dia
+          mengklaim bahwa ini karena dia melihat Katsuki sebagai perwujudan dari seseorang yang berjuang untuk
+          kemenangan. Dia juga mengakui bahwa dia sangat tidak menyukai sisi ini, dan cenderung untuk tetap
+          mengevaluasinya </p>
+
+        <p class="p2-base">QUIRK DAN KEMAMPUAN</p>
+        <p class="p1-base">One For All (ル ン フ フ ー ・ オ ー ル Wan Fō Ōru?): Diberikan kepadanya dari Toshinori Yagi,
+          quirk yang memberi Izuku akses ke kekuatan yang ditimbun, memberinya kekuatan manusia super dan
+          meningkatkan kelincahan dan mobilitas dengan menyebarkan kekuatannya ke seluruh tubuh. Meskipun ia
+          belum menunjukkan kecepatan manusia super, refleks luar biasa, dan daya tahan pada level All Might,
+          Izuku telah terbukti mampu mengendalikan sebagian kecil dari kekuatan One For All, menggunakannya
+          untuk meningkatkan kekuatan, kecepatan, dan kelincahannya. Jika Izuku tidak mengendalikan One For
+          All di bawah batasnya saat ini sebesar 20%, tubuhnya dapat sangat rusak oleh kekuatannya. Izuku juga
+          memiliki koneksi mental kepada pengguna One For All sebelumnya. </p>
+        <p class="p1-base">Baru-baru ini, refleks dan kecepatan Izuku telah meningkat dengan penggunaan One For
+          All, mampu mempertahankan posisinya melawan berbagai serangan yang masuk selama Ujian Lisensi
+          Sementara. Kontrol Izuku pada One For All telah meningkat karena maksimumnya saat ini adalah 20%
+          dari kekuatan One For All saat berada dalam Full Cowl, pada saat Festival Budaya U.A </p>
+
+        <p class="p2-base">GERAKAN</p>
+        <ul>
+          <li>
+            <p class="p1-base"><b>Detroit Smash</b> (デトロイトスマッシュ Detoroito Sumasshu): Sama seperti langkah
+              All
+              Might, kecuali Izuku melakukannya dalam bentuk pukulan uppercut.</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p class="p1-base"><b>Delaware Smash</b> (デ ラ ウ エ ア ス マ ッ シ ュ Derauea Sumasshu): Izuku
+              menjentikkan
+              jarinya untuk menciptakan gelombang kejut tekanan angin kuat yang memiliki kekuatan yang
+              cukup untuk memecahkan potongan besar es. Karena menggunakan serangan ini pada 100%, Izuku
+              membatasi menggunakan gerakan ini tanpa melukai dirinya sendiri hingga sepuluh kali.</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p class="p1-base"><b>One For All: Full Cowl</b> (ワ ン ・ フ ォ ー ・ オ ー ル フ ル カ ウ ル Wan Fō Ōru Furu
+              Kauru?): Melalui pelatihannya bersama Gran Torino, Izuku mampu mendapatkan kontrol yang
+              lebih baik dari Quirknya. Teknik ini memungkinkan Izuku untuk mengaktifkan 20% (sebelumnya
+              5% yang kemudian ditingkatkan menjadi 8%) dari One For All di seluruh tubuhnya, membiarkan
+              aliran daya dan mengalir melaluinya, bukan berkonsentrasi di satu lokasi. Menurut Izuku,
+              teknik ini memberinya kemampuan manuver yang lebih besar. Mengaktifkan teknik ini memberinya
+              kekuatan, kecepatan, mobilitas, dan kelincahan yang ditingkatkan. Itu juga mencegahnya
+              mematahkan tulang ketika menyerang. </p>
+          </li>
+        </ul>
+        <ul>
+          <ul>
+            <li>
+              <p class="p1-base"><b>5% Detroit Smash</b> (5 パ ー セ ン ト デ ト ロ イ ト ス マ ッ シ ュ 5 Pāsento
+                Detoroito
+                Sumasshu): Izuku mengaktifkan One for All: Full Cowl pada 5% kemudian melompat ke udara
+                dan memberikan pukulan ke bawah yang ditingkatkan ke lawan. Dia juga menggunakan gerakan
+                ini dalam bentuk pukulan lurus ke depan.</p>
+            </li>
+          </ul>
+        </ul>
+        </li>
+        <ul>
+          <ul>
+            <li>
+              <p class="p1-base"><b>Delaware Smash Air Force</b> (デ ラ ウ エ ア ス マ ッ シ ュ エ ア フ ォ ー ス ス
+                Deraruea
+                Sumasshu Eafosu): Izuku menggunakan sarung tangannya yang ditingkatkan oleh Mei Hatsume
+                untuk mengarahkan ledakan udara terkompresi melawan musuhnya, memiliki kekuatan yang
+                cukup untuk menyengat Gentle saat dia berada di udara , memberi Izuku celah untuk
+                menyusulnya. Dengan menggunakan kelima jarinya, ia dapat meluncurkan hingga empat
+                Delaware Smashes secara bersamaan.</p>
+            </li>
+          </ul>
+        </ul>
+        <ul>
+          <ul>
+            <li>
+              <p class="p1-base"><b>One For All: Full Cowl - Shoot Style</b> (ワ ン フ ォ ー オ ー ル フ ル カ ウ ル シ
+                ュ ー ト ス
+                タ イ ル Wan Fō Ōru Furu Kauru Shūto Sutairu): Saat menggunakan One For All: Full Cowl,
+                Izuku menggunakan gaya bertarung yang lebih berfokus pada tendangan. Izuku memusatkan
+                efek One For All: Full Cowl dalam tubuh dan kakinya daripada lengannya, memungkinkan dia
+                untuk mengalirkan lebih banyak kekuatan karena fakta bahwa otot-otot kaki manusia secara
+                alami lebih kuat daripada otot lengan manusia, memberinya cukup kekuatan dan stabilitas
+                dan memungkinkan dia untuk keluar dari belenggu harus meniru All Might. </p>
+            </li>
+          </ul>
+        </ul>
+        <ul>
+          <ul>
+            <ul>
+              <li>
+                <p class="p1-base"><b>Shoot Style: St. Louis Smash</b> (シ ュ ー ト ス タ イ ル セ ン ト ル イ ス ス マ
+                  ッ シ ュ
+                  Shūto Sutairu Sento Ruisu Sumasshu) Sementara menggunakan Shoot Style, Izuku
+                  melompat ke udara dan sebelum berayun untuk memberikan tendangan ke wajah lawan.
+                  Izuku menggunakan langkah ini untuk melumpuhkan Gentle Criminal.</p>
+              </li>
+            </ul>
+          </ul>
+        </ul>
+        <ul>
+          <ul>
+            <li>
+              <p class="p1-base"><b>One For All: Full Cowl - 100%</b> (ワ ン · フ ォ ー · オ ー ル フ ル カ ウ ル 100%
+                パ ー セ ン
+                ト Wan Fo Oru Furu Kauru 100 Pāsento): Izuku mengaktifkan One For All ke batas yang
+                paling penuh, memberikan dia dorongan luar biasa dalam kecepatan dan kekuatan yang
+                memungkinkan dia untuk dengan mudah membuat Kai Chisaki kewalahan. Ini pertama kali
+                digunakan melawan Chisaki untuk melindungi Eri. Peningkatan kekuatan membuat rambutnya
+                berwarna terang. Dia saat ini hanya dapat menggunakannya tanpa kerusakan pada tubuhnya
+                saat melakukan kontak fisik dengan Eri.</p>
+            </li>
+          </ul>
+        </ul>
+        <ul>
+          <ul>
+            <li>
+              <p class="p1-base"><b>One For All: Full Cowl - 20%</b>: Izuku menggunakan 20% dari satu
+                untuk
+                kekuatan penuh Semua dan mendistribusikan ke seluruh tubuhnya, memberinya kekuatan dan
+                kecepatan yang lebih besar meningkatkan. Meskipun tidak akan menyebabkan
+                tulang-tulangnya untuk istirahat, itu meletakkan beban besar pada tubuh Izuku,
+                menyebabkan dia sakit besar ke titik yang rasanya seperti tulang-tulangnya berada di
+                ambang melanggar.</p>
+          </ul>
+        </ul>
+        <ul>
+          <ul>
+            <ul>
+              <li>
+                <p class="p1-base"><b>Manchester Smash</b> (マ ン チ ェ ス タ ー ス マ ッ シ ュ Manchesutā
+                  Sumasshu): Izuku
+                  melompat ke udara dan membalik ke depan untuk meluncurkan tendangan di atas
+                  lawannya. Meskipun Chisaki berhasil menghindarinya, itu menghancurkan tanah dengan
+                  parahj sehingga Chisaki tidak dapat membalas dengan Quirk Overhaulnya.</p>
+              </li>
+            </ul>
+          </ul>
+        </ul>
+        <ul>
+          <li>
+            <p class="p1-base"><b>One For All 100%</b>: Sebuah teknik yang memungkinkan Izuku menyerang
+              menggunakan
+              kekuatan penuh Satu Untuk Semua di bagian tubuh yang diinginkan, dengan biaya bagian tubuh
+              yang disebut hancur saat eksekusi. Penggunaan lebih lanjut dari anggota tubuh yang sama
+              setelah serangan awal dapat menyebabkan jaringan parut, seperti yang terlihat dengan
+              perkelahiannya melawan Shoto Todoroki (menyebabkan Izuku untuk menjalani operasi di tangan
+              kanannya karena cedera) dan otot (meninggalkan banyak bekas luka di lengan kanannya).</p>
+          </li>
+        </ul>
+        <ul>
+          <ul>
+            <li>
+              <p class="p1-base"><b>100% Detroit Smash</b> (100 パ ー セ ン ト デ ト ロ イ ト ス マ マ ッ ュ ュ 100
+                Pāsento
+                Detoroito Sumasshu): Izuku mengaktifkan One For All pada 100% di lengannya dan kemudian
+                menyerang targetnya dengan pukulan yang menerjang.</p>
+          </ul>
+        </ul>
+        <ul>
+          <ul>
+            <li>
+              <p class="p1-base"><b>1.000.000% Delaware Detroit Smash </b>(1000000 パ ー セ ン ト デ ト ロ イ ト デ ラ
+                ウ ウ エ
+                ア ス マ ッ シ ュ 1000000 Pāsento Derauea Detoroito Sumasshu): Izuku mengaktifkan One For All
+                pada 100% kemudian menyerang lawannya dengan serangan ayunan penuh. Saat melakukan
+                gerakan, Izuku pertama-tama menggunakan Delaware Smash yang berkekuatan penuh, lalu
+                memberikan Detroit Smash yang menghancurkan.</p>
+          </ul>
+        </ul>
+
+        <br><br>
+        <p class="p3-base">Written by <a id="p3-bases" href="#">Miftakhul Ilman Rifqi</a> ,Posted on <a id="p3-bases"
+            href="#">10 Juni 2021</a></p>
+        <br>
+        <hr>
+        <br>
+        <div class="nav-previous"><a href="#"><span>Previous
+              post</span><br><br> Spesifikasi Harga Xiaomi Redmi Note 9 Pro Max Terbaru</a></div>
+
+        <div class="nav-next"><a href="#"><span>Next
+              post</span><br><br>
+            Review Spesifikasi dan Harga Realme 6 Pro 2020</a></div>
+        <br><br><br><br><br><br>
+        <hr>
+
+
+        <!-- Services Section -->
+        <div class="services" id="services">
+          <h1>Artikel Lainnya</h1>
+          <!-- menggunakan grid -->
+          <div class="services__wrapper">
+
+            <!-- perkotak -->
+            <div class="services__card">
+              <a style="text-decoration: none;" href="midoriya.html">
+                <img src="image/midoriya1.jpg" alt="deku"
+                  style="border-radius: 20px 20px 5px 5px;width: 100%;margin-top: -7px;"">
+                <h2>-MY HERO ACADEMIA-</h2>
+                <h2 style=" font-size: 20px;text-align: center;">IZUKU MIDORIYA</h2>
+              </a>
+            </div>
+
+            <!-- perkotak -->
+            <div class="services__card">
+              <a style="text-decoration: none;" href="midoriya.html">
+                <img src="image/midoriya1.jpg" alt="deku"
+                  style="border-radius: 20px 20px 5px 5px;width: 100%;margin-top: -7px;"">
+                <h2>-MY HERO ACADEMIA-</h2>
+                <h2 style=" font-size: 20px;text-align: center;">IZUKU MIDORIYA</h2>
+              </a>
+            </div>
+
+            <!-- perkotak -->
+            <div class="services__card">
+              <a style="text-decoration: none;" href="midoriya.html">
+                <img src="image/midoriya1.jpg" alt="deku"
+                  style="border-radius: 20px 20px 5px 5px;width: 100%;margin-top: -7px;"">
+                <h2>-MY HERO ACADEMIA-</h2>
+                <h2 style=" font-size: 20px;text-align: center;">IZUKU MIDORIYA</h2>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <br>
+
+        <hr>
+        <br>
+
+        <h4 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow"
+              id="cancel-comment-reply-link" href="/contoh-script-html-biodata-keren/#respond"
+              style="display:none;">Cancel reply</a></small></h4>
+
+
+        <hr>
+        <br>
+
+        <!-- kolom komentar -->
+        <form name="formkomen" action="daftar.php" method="POST" id="formKomentar"
+          onsubmit="return validateFormkomen()">
+          <div>
+            <input type="text" name="nama" class="Myinput" placeholder="Nama">
+          </div>
+
+          <div>
+            <input type="text" name="email" class="Myinput" placeholder="Email">
+          </div>
+
+          <div>
+            <input type="text" name="website" class="Myinput" name="website" placeholder="Website" />
+          </div>
+
+          <div>
+            <textarea name="komen" class="Myinputkomen" rows="10" placeholder="Komentar"></textarea>
+          </div>
+
+          <div>
+            <input type="submit" name="klik" value="Tambahkan Komentar" />
+          </div>
+        </form>
+
+      </article>
+    </div>
+
+    <!-- bagian samping float -->
+    <aside>
+      <article class="card1">
+        <header>
+          <div>
+            <h2 align="center">Kunjungi juga</h2>
+            <hr>
+            <!-- link-link -->
+            <ul style="border-left-style: solid;border-left-width: 0px;padding-left: 5px;list-style: none;">
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+
+              <hr>
+
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+              <li style="height: 21px;"><a style="text-decoration: none;font-size: 15px;" class="kunjungi"
+                  href="index.html"><i class="fas fa-hand-point-right faa-passing animated faa-fast"></i> Cara mengatasi
+                  hati yang galau</a></li>
+
+              <hr>
+            </ul>
+
+            <br> </br>
+        </header>
+      </article>
+
+      <!-- video tag -->
+      <video  style="width: 100%;margin-top: 20px;border-radius: 10px;" controls>
+        <source src="video/Blcr-167-480P-SAMEHADAKU.VIP.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+      </video>
+
+    </aside>
+    
+  </main>
+
+
+  <footer>
+    <!-- Footer Section -->
+    <div class="footer__container">
+      
+
+      <!-- bawah sendiri -->
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <!-- logo -->
+          <div class="footer__logo">
+            <a href="index.html" id="footer__logo"><img src="image/logo.png" alt="logo"></a>
+          </div>
+          <p class="website__rights">
+            <p class="website__rights">© MIRSite 2021. All rights reserved</p>
+          </p>
+
+          <!-- link icon -->
+          <div class="social__icons">
+            <a href="https://web.facebook.com/BozzClax/" class="social__icon--link" target="_blank"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/miftakhul_ilman_rifqi/" class="social__icon--link"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/channel/UCLr9cQIzbUuO8LdWpZK72iQ" class="social__icon--link"><i
+                class="fab fa-youtube"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=6282251204797&text=Hai, Chat-an yuk"
+              class="social__icon--link"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://twitter.com/IlmanMiftakhul?s=09" class="social__icon--link"><i
+                class="fab fa-twitter"></i></a>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </footer>
+
+  <!-- penghubung script JavaScript -->
+  <script src="js.js"></script>
+
+</body>
+
+</html>
